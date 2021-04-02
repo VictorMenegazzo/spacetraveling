@@ -14,7 +14,6 @@
 
 .post {
   margin-top: 5rem;
-  margin-bottom: 5rem;
 
   h1 {
     color: var(--heading);
@@ -23,35 +22,47 @@
 
   .postInfos {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
     margin-top: 1.5rem;
 
-    time {
+    color: var(--info);
+
+    > div {
       display: flex;
       align-items: center;
 
-      span {
-        margin-left: 0.5rem;
-        font-size: 0.875rem;
+      time {
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 0.5rem;
+          font-size: 0.875rem;
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+
+        margin-left: 1.5rem;
+
+        span {
+          margin-left: 0.5rem;
+          font-size: 0.875rem;
+        }
       }
     }
 
-    div {
-      display: flex;
-      align-items: center;
-
-      margin-left: 1.5rem;
-
-      span {
-        margin-left: 0.5rem;
-        font-size: 0.875rem;
-      }
+    i {
+      margin-top: 1rem;
     }
   }
 
   .content {
     margin-top: 4rem;
+
     div {
       h2 {
         font-size: 2.25rem;
@@ -71,5 +82,67 @@
         }
       }
     }
+  }
+}
+
+.footer {
+  margin-top: 3.75rem;
+  margin-bottom: 5rem;
+
+  .otherPages {
+    display: flex;
+    align-self: center;
+
+    padding-top: 3rem;
+
+    border-top: 1px solid rgba(248, 248, 248, 0.1);
+
+    a {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.125rem;
+        color: var(--heading)
+      }
+
+      strong {
+        margin-top: 0.5rem;
+        color: var(--highlight);
+      }
+    }
+
+    .prevPost {
+      margin-right: auto;
+    }
+
+    .nextPost {
+      margin-left: auto;
+
+      strong {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  div {
+    margin-top: 5rem;
+  }
+}
+
+.exitPreviewMode {
+  a {
+    background: var(--heading);
+    border-radius: 0.25rem;
+    margin: 106px 0;
+    padding: 1.125rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--background);
   }
 }

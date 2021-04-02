@@ -69,3 +69,20 @@
     filter: brightness(0.8)
   }
 }
+
+.exitPreviewMode {
+  a {
+    background: var(--heading);
+    border-radius: 0.25rem;
+    margin: 106px 0;
+    padding: 1.125rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--background);
+  }
+}
